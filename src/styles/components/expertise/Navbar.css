@@ -1,0 +1,124 @@
+.exp--navbar {
+   width: 100%;
+   height: 15%;
+   /* background: var(--bg-color); */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: fixed;
+   top: 0; left: 0;
+   z-index: 10;
+   transition: all 0.3s ease-in;
+}
+.exp--navbar.scrolled {
+   height: 90px;
+   backdrop-filter: blur(3px);
+   background: rgba(10,15,21, 0.5);
+   transition: all 0.4s ease-out;
+}
+.expertise--navbar {
+   width: 90%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.left-side img {
+   width: 60px; 
+   height: 60px;
+}
+.exp-nav--icon {
+   opacity: 0;
+   cursor: pointer;
+}
+.exp-nav--closeIcon { 
+   display: none;
+}
+.exp-nav--icon.visible {
+   opacity: 0;
+}
+.exp-nav--links {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 32px;
+   gap: 25px;
+   font-family: 'Lemon', serif;
+}
+.exp-nav--link {
+   padding-bottom: 5px;
+}
+.exp-nav--link:hover {
+   cursor: pointer;
+   border-bottom: 3px solid var(--primary-color);
+   transition: all 0.1s ease-in;
+}
+
+@media screen and (max-width: 824px) {
+   .expertise--navbar {
+      width: 98%;
+      height: 100%;
+   }
+   .exp--navbar {
+      height: 10%;
+   }
+   .exp--navbar.scrolled {
+      height: 8%;
+      .exp-nav--icon {
+         top: 60%;
+      }
+   }
+   .expertise--navbar {
+      .left-side {
+         width: 50%;
+         transition: all 0.3s ease-in;
+      }
+      .left-side img {
+         width: 40px;
+         height: 40px;
+         margin-left: 10%;
+      }
+      .right-side {
+         width: 50%; height: 100%;
+      }
+      .exp-nav--links {
+         font-size: 14px;
+         transform: translateX(600px);
+         transition: all 0.5s ease-out;
+         height: 100%;
+      }
+      .exp-nav--icon {
+         opacity: 1;
+         visibility: visible;
+         position: absolute;
+         font-size: 36px;
+         right: 10%;
+         top: 50%; transform: translateY(-50%);
+         transition: all 0.3s ease-in;
+      }
+
+   }
+   .expertise--navbar.visible {
+      .left-side {
+         width: 0%;
+         transition: all 0.3s ease-out;
+      }
+      .right-side {
+         width: 100%;
+      }
+      .exp-nav--links {
+         transform: translateX(0);
+         transition: all 0.5s ease-in;
+      }
+      .exp-nav--icon {
+         opacity: 0;
+         visibility: hidden;
+         transition: all 0.3s ease-out;
+      }
+      .exp-nav--closeIcon {
+         display: unset;
+         font-size: 28px;
+         line-height: 14px;
+      }
+   }
+
+}

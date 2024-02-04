@@ -1,0 +1,79 @@
+.home {
+   background: var(--bg-color);
+}
+
+/* ---------- reset ---------- */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: initial;
+}
+
+button {
+    font: inherit;
+    border: initial;
+    outline: initial; /* create alternative for focus state */
+    background-color: initial;
+}
+
+input {
+    border: initial;
+    outline: initial; /* create alternative for focus state */
+    font: inherit;
+}
+
+/* ---------- Welcome page ---------- */
+.welcome--screen {
+   opacity: 0;
+   visibility: hidden;
+}
+.welcome--section {
+   position: absolute;
+   height: 100vh;
+   width: 100vw;
+   display: flex;
+   z-index: 5;
+   justify-content: center;
+   align-items: center;
+   background: linear-gradient(168deg, #060407 31.75%, rgba(6, 4, 7, 0.94) 49.19%, #060407 70.48%);
+}
+.welcome--section p {
+   font-size: 108px;
+   font-family: 'Lemon', serif;
+}
+.welcome--section p::before {
+   content: 'Welcome';
+   position: absolute;
+   top:50%; left:50%;
+   transform: translate(-48%, -44%);
+   background: linear-gradient(0deg, #21E6ED -10.33%, rgba(27, 113, 169, 0.75) 47.55%, rgba(14, 29, 37, 0.10) 100%);
+   background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   z-index: -1;
+}
+
+/* ---------- BACKGROUND ---------- */
+
+.background--color {
+   background: var(--bg-color);
+   width: 100dvw;
+   height: 100dvh;
+   overflow: hidden;
+   z-index: -100;
+
+}
+ 

@@ -1,0 +1,214 @@
+.modal {
+   opacity: 0;
+   visibility: hidden;
+   position: fixed;
+   z-index: 5;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   backdrop-filter: blur(5px);
+   transition: all 0.3s ease-out;
+}
+
+.modal.visible, .modal-image.visible {
+   opacity: 1;
+   visibility: visible;
+   transition: all 0.5s ease-in;
+}
+ 
+ /* Modal Content */
+.modal-content {
+   position: fixed;
+   background: linear-gradient(to right bottom, #070508, #0a090f, #0a0e14, #081218,  #081218, #0a0e14, #0a090f, #070508);
+   top: 50%; left: 50%;
+   transform: translate(-50%, -50%);
+   padding: 20px;
+   border: 1px solid rgba(33, 230, 237, 0.70);
+   border-radius: 20px;
+   width: 60%;
+}
+.modal-content .close:hover {
+   color: var(--primary-color);
+}
+.modal-content .close {
+   font-weight: 700;
+   cursor: pointer;
+   font-size: 2.5rem;
+   position: absolute;
+   right: 0.5em;
+   top: 0;
+}
+.modal-content h2 {
+   text-align: center;
+   font-family: var(--title-font);
+   font-family: 'Ubuntu Mono', monospace;
+   font-size: 32px;
+   margin: 10px 0;
+}
+.modal-content p {
+   color: rgba(249,255,255, 0.8);
+   text-indent: 50px;
+   font-size: 16px;
+   font-family: 'Space Mono', 'Syne Mono', monospace;
+}
+.modal-content p .string {
+   color: var(--text-color);
+}
+.modal-content p .color {
+   color: var(--primary-color);
+}
+
+.modal-content .flex-li p.li-title {
+   font-family: 'Ubuntu Mono', serif;
+   font-size: 24px;
+   margin: 5px 0 0 0;
+   color: var(--text-color);
+}
+.modal-content .flex-li li span.string{
+   font-weight: 600;
+   color: var(--text-color);
+   margin: 5px 0;
+}
+.modal-content .flex-li li{
+   color: rgba(249,255,255, 0.8);
+   margin: 0;
+   font-size: 14.5px;
+   font-family: 'Space Mono', 'Syne Mono', monospace;
+}
+.flex-li ul {
+   margin: 10px 0;
+}
+
+.modal-content .cert-skills {
+   padding: 5px;
+   margin: 10px 0 5px 0;
+   display: flex;
+   gap: 5px;
+   justify-content: center;
+   text-align: center;
+}
+.modal-content .cert-skills .cert-skill.no-border {
+   border: none;
+   font-size: 24px;
+   color: var(--primary-color);
+}
+
+.modal-content .cert-skills .cert-skill {
+   padding: 10px;
+   border: 2px solid var(--primary-color);
+   border-radius: 10px;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   color: #d1d2d3;
+   font-weight: 600 !important;
+   font-family: 'Ubuntu Mono', serif;
+   font-size: 16px;
+}
+
+/* ---------- MODAL IMAGE ---------- */
+
+.modal-image {
+   opacity: 0;
+   visibility: hidden;
+   position: fixed;
+   z-index: 5;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   backdrop-filter: blur(5px);
+   transition: all 0.3s ease;
+}
+
+.modal-content-image {
+   position: fixed;
+   background: linear-gradient(to right bottom, #070508, #0a090f, #0a0e14, #081218,  #081218, #0a0e14, #0a090f, #070508);;
+   top: 50%; left: 50%;
+   transform: translate(-50%, -50%);
+   padding: 20px;
+   border: 1px solid rgba(33, 230, 237, 0.70);
+   border-radius: 20px;
+   width: 40%;
+   transition: all 0.3s ease;
+}
+
+.modal-content-image img {
+   width: 100%;
+   height: auto;
+   margin-top: 20px;
+   border: 2px solid rgba(33, 230, 237, 0.30); 
+}
+.modal-content-image .close {
+   font-weight: 700;
+   cursor: pointer;
+   font-size: 2.5rem;
+   position: absolute;
+   right: 0.5em;
+   top: 0;
+}
+.modal-content-image .close:hover {
+   color: var(--primary-color);
+}
+.modal-content-image .img-flex {
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 15px 0;
+   gap: 30px;
+   transition: 0.6s ease;
+}
+.modal-content-image .img-flex a{
+   text-decoration: none;
+   color: var(--primary-color);
+   font-family: 'Space Mono', 'Syne Mono', monospace;
+   font-size: 20px;
+}
+.modal-content-image .img-flex p.val-link {
+   word-spacing: normal;
+   color: var(--primary-color);
+}
+.modal-content-image .img-flex a svg {
+   margin: 0 0 -2px 5px;
+   stroke: var(--primary-color);
+}
+.modal-content-image .img-flex a:hover svg {
+   stroke: var(--text-color);
+}
+.modal-content-image .img-flex a:hover p.val-link{
+   color: rgba(33, 230, 237, 0.80);
+}
+.modal-content-image .img-flex a:active {
+   transform: scale(0.96);
+}
+.modal-content-image .img-flex p .copy-icon svg {
+   cursor: pointer;
+   margin: -2px 6px;
+}
+.modal-content-image .img-flex p svg:hover {
+   stroke: var(--text-color);
+}
+.modal-content-image .img-flex p.code {
+   font-family: 'Space Mono', 'Syne Mono', monospace;
+   font-size: 20px;
+}
+
+.modal-content-image .img-flex .copy-message {
+   position: absolute;
+   /* transform: translateY(-50%); */
+   top: 30%; left: 70%;
+   transform: translate(-30%, -70%);
+   color: rgba(33, 230, 237, 0.70);
+   font-size: 14px;
+   opacity: 0;
+   letter-spacing: normal; word-spacing: normal;
+   transition: opacity 0.3s;
+   padding: 5px;
+   /* border-radius: 5px;  */
+}
+.modal-content-image .img-flex .copy-message.visible {
+   opacity: 1;
+}

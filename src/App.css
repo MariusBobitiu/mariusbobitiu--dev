@@ -1,38 +1,65 @@
 .App {
-  text-align: center;
+  margin: 0;
+  padding: 0;
+  background: #09070A;
+  color: #F9FAFA;
+  /* overflow: hidden; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    --primary-color: #21E6ED;
+    --secondary-color: #1B71A9;
+    --tertiary-color: #0E1D25;
+    --bg-color: #070508;
+    --text-color: #F9FAFA;
+ 
+    --gradient: linear-gradient(rgb(33, 230, 237), rgba(27, 113, 169,1), rgba(27, 113, 169,0.2) ,rgba(7, 5, 8, 0.5),rgba(7, 5, 8))
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ul,
+ol {
+    list-style: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+a {
+    color: inherit;
+    text-decoration: initial;
 }
 
-.App-link {
-  color: #61dafb;
+button {
+    font: inherit;
+    border: initial;
+    outline: initial; /* create alternative for focus state */
+    background-color: initial;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input {
+    border: initial;
+    outline: initial; /* create alternative for focus state */
+    font: inherit;
 }
+
+/* scrollbar settings */
+
+::-webkit-scrollbar {
+    width: 6px;
+ }
+ 
+ ::-webkit-scrollbar-track {
+   background-color: transparent;
+ }
+ 
+ ::-webkit-scrollbar-thumb {
+   background-color: rgba(33, 230, 237, 0.5);
+   border-radius: 3px;
+ }
+ 
+ ::-webkit-scrollbar-thumb:hover {
+   background-color: var(--primary-color);
+ }
