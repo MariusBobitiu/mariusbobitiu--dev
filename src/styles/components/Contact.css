@@ -187,7 +187,6 @@ input:-webkit-autofill:active{
    border-radius: 10px;
    z-index: 8;
    background: linear-gradient(128deg, #0B3030 -26.98%, #070508 48.27%, #051818 124.42%);
-   /* border: 1px solid rgba(33, 230, 237, 0.40); */
    opacity: 1;
    visibility: visible;
    transition: all 0.3s ease-in;

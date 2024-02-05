@@ -1,5 +1,3 @@
-// import { useDispatch } from "react-redux";
-// import { showLoader } from "./features/form/uiSlice";
 const BASE_API_URL = 'https://wr59u9702c.execute-api.eu-west-2.amazonaws.com'
 
 const useSubmitForm = () => {
@@ -39,7 +37,6 @@ const useSubmitForm = () => {
                    alert('Failed to send message. Please try again.');
                    return;
                }
-               // dispatch(showLoader());
       }catch(err){
          console.log(err);
       }

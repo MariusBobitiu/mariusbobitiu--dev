@@ -41,8 +41,8 @@ function ContactForm() {
       e.preventDefault();
       dispatch(showLoader());
       submitForm(form).then(() => {
-         dispatch(hideLoader());
          sentMessageHandler();
+         dispatch(hideLoader());
          dispatch(resetForm());
       });
    }
