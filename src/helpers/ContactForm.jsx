@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { updateForm, resetForm } from './features/form/formSlice';
+import { updateForm } from './features/form/formSlice';
 import useSubmitForm from './SubmitForm';
 import DOMPurify from 'dompurify';
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
