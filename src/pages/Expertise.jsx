@@ -35,7 +35,7 @@ function Expertise() {
   };
   // Handler to open the certification image modal
   const handleCertificationImageClick = (certificationId) => {
-    const certificationDetails = certification.find(cert=> cert.id === certificationId);
+    const certificationDetails = certification.find(cert => cert.id === certificationId);
     setSelectedCertification(null);
     setSelectedCertificationImage(certificationDetails);
   }

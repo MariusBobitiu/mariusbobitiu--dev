@@ -1,5 +1,7 @@
 //CertificationList.jsx
 
+import THM_SOC_lv1 from '../assets/Certifications/TryHackMe - SOC Level 1.png'
+import TCP_Dump from '../assets/Certifications/Coursera - TCP Dump.png'
 import AWS_SAA_cert from '../assets/Certifications/AWS Certified Solutions Architect - Associate certificate.png'
 import AWS_CCP_cert from '../assets/Certifications/AWS Certified Cloud Practitioner certificate.png'
 import SecPlus_cert from '../assets/Certifications/CompTIA Security+ ce certificate.png'
@@ -65,5 +67,34 @@ export const certification = [
       link: 'http://verify.comptia.org/',
       cert_image: Aplus_cert,
       code: 'ELE9E5M532BQQ4GC'
-   }
+   },
+   {
+      id: 5,
+      badge: '',
+      name: 'TryHackMe - SOC Level 1',
+      description: '',
+      fullDescriptionP1: '',
+      fullDescriptionP2: '',
+      learningOutcomes: [''],
+      learningOutcomesDescription: [''],
+      skills: [''],
+      link: '',
+      cert_image: THM_SOC_lv1,
+      code: '',
+   },
+   {
+      id: 6,
+      badge: '',
+      name: 'Coursera - TCP Dump',
+      description: '',
+      fullDescriptionP1: '',
+      fullDescriptionP2: '',
+      learningOutcomes: [''],
+      learningOutcomesDescription: [''],
+      skills: [''],
+      link: '',
+      cert_image: TCP_Dump,
+      code: '',
+   },
+
 ]
