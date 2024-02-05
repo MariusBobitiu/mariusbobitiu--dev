@@ -31,9 +31,7 @@ function ContactForm() {
       e.preventDefault();
       submitForm(form).then(() => {
          dispatch(resetForm());
-      }).catch(error) {
-         console.error("Form submision error: ", error);
-      };
+      });
    }
 
    return (
