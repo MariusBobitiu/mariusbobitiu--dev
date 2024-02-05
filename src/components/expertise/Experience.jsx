@@ -125,7 +125,7 @@ function Experience() {
                   <div className="resume-container">
                      <h1 className="company"><a href="https://tryhackme.com" target="_blank" rel='noreferrer'>TryHackMe&nbsp;<FiExternalLink /></a></h1>
                      <div className="job-container">
-                           <h1 className="position">SOC Level 1&nbsp;( <span className="font-edit cert-text " onClick={() => handleCertificationImageClick(5)}>View Certificate&nbsp;<FaImage /></span> )</h1>
+                           <h1 className="position">SOC Level 1&nbsp;( <span className="font-edit cert-text " onClick={() => handleCertificationImageClick(1)}>View Certificate&nbsp;<FaImage /></span> )</h1>
                            <p className="date">Sep 2023 - Nov 2023</p>
                            <ul>
                               <li><strong className="accent">SIEM Tools Proficiency: </strong>Enhanced real-time security alert analysis using cutting-edge SIEM tools.</li>

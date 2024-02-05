@@ -10,6 +10,20 @@ import Aplus_cert from '../assets/Certifications/CompTIA A+ ce certificate.png'
 export const certification = [
    {
       id: 1,
+      badge: '',
+      name: 'TryHackMe - SOC Level 1',
+      description: '',
+      fullDescriptionP1: '',
+      fullDescriptionP2: '',
+      learningOutcomes: [''],
+      learningOutcomesDescription: [''],
+      skills: [''],
+      link: '',
+      cert_image: THM_SOC_lv1,
+      code: '',
+   },
+   {
+      id: 2,
       badge: 'https://d1.awsstatic.com/training-and-certification/certification-badges/AWS-Certified-Solutions-Architect-Associate_badge.3419559c682629072f1eb968d59dea0741772c0f.png',
       name: 'AWS Certified Solutions Architect - Associate',
       date: 'NOV 2023 - JAN 2024',
@@ -24,7 +38,7 @@ export const certification = [
       code: 'KKRD98CLSM4EQQKS'
    },
    {
-      id: 2,
+      id: 3,
       badge: 'https://d1.awsstatic.com/training-and-certification/certification-badges/AWS-Certified-Cloud-Practitioner_badge.634f8a21af2e0e956ed8905a72366146ba22b74c.png',
       name: 'AWS Certified Cloud Practitioner',
       date: 'OCT 2023 - NOV 2023',
@@ -39,7 +53,7 @@ export const certification = [
       code: 'VBXN8B81V14QQRWC'
    },
    {
-      id: 3,
+      id: 4,
       badge: 'https://cin.comptia.org/media/securityplus-logo-certified-ce-png.8/full',
       name: 'CompTIA Security+ Ce',
       date: 'JUN 2023 - OCT 2023',
@@ -54,7 +68,7 @@ export const certification = [
       code: 'R935M6SR1N4417WC'
    },
    {
-      id: 4,
+      id: 5,
       badge: 'https://cdn-ckjba.nitrocdn.com/XvHIXtRQMUYzLjoXbfBpiwAcydcSSOVj/assets/images/optimized/rev-d85625b/www.ciat.edu/wp-content/uploads/2020/12/a-logo-eps.png',
       name: 'CompTIA A+ Ce',
       date: 'APR 2023 - JUN 2023',
@@ -67,34 +81,6 @@ export const certification = [
       link: 'http://verify.comptia.org/',
       cert_image: Aplus_cert,
       code: 'ELE9E5M532BQQ4GC'
-   },
-   {
-      id: 5,
-      badge: '',
-      name: 'TryHackMe - SOC Level 1',
-      description: '',
-      fullDescriptionP1: '',
-      fullDescriptionP2: '',
-      learningOutcomes: [''],
-      learningOutcomesDescription: [''],
-      skills: [''],
-      link: '',
-      cert_image: THM_SOC_lv1,
-      code: '',
-   },
-   {
-      id: 6,
-      badge: '',
-      name: 'Coursera - TCP Dump',
-      description: '',
-      fullDescriptionP1: '',
-      fullDescriptionP2: '',
-      learningOutcomes: [''],
-      learningOutcomesDescription: [''],
-      skills: [''],
-      link: '',
-      cert_image: TCP_Dump,
-      code: '',
    },
 
 ]

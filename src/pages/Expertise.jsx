@@ -162,7 +162,7 @@ function Expertise() {
         <p className='title certifications'> Certifications </p>
         <div className="certifications--container">
           <div className="certifications--list">
-            {certification.map((item) => {
+            {certification.slice(1).map((item) => {
               return(
                 <Certification 
                     key={item.id}
