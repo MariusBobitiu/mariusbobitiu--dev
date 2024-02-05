@@ -23,7 +23,7 @@ function Contact({ value }) {
                         </a>
                      </li>
                      <li className="social--link">
-                        <a href='https://dribbble.com/mariusbobitiu' target='_blank'>
+                        <a href='https://dribbble.com/mariusbobitiu' target='_blank' rel='noreferrer'>
                            # dribble
                         </a>
                      </li>
