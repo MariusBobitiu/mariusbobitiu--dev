@@ -29,8 +29,11 @@ function ContactForm() {
 
    const onSubmit = (e) => {
       e.preventDefault();
-      submitForm(form);
-      resetForm();
+      submitForm(form).then(() => {
+         dispatch(resetForm());
+      }).catch(error) {
+         console.error("Form submision error: ", error);
+      };
    }
 
    return (

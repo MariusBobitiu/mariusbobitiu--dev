@@ -18,7 +18,6 @@ const formSlice = createSlice({
             };
         },
         resetForm: () => {
-            // Reset state to initial state
             return initialState;
           },
     }
