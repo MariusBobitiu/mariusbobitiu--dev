@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { updateForm } from './features/form/formSlice';
+import { updateForm, resetForm } from './features/form/formSlice';
 import useSubmitForm from './SubmitForm';
 import DOMPurify from 'dompurify';
 
@@ -30,6 +30,7 @@ function ContactForm() {
    const onSubmit = (e) => {
       e.preventDefault();
       submitForm(form);
+      resetForm();
    }
 
    return (
