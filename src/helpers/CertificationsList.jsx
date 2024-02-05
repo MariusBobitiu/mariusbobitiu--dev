@@ -1,7 +1,6 @@
 //CertificationList.jsx
 
 import THM_SOC_lv1 from '../assets/Certifications/TryHackMe - SOC Level 1.png'
-import TCP_Dump from '../assets/Certifications/Coursera - TCP Dump.png'
 import AWS_SAA_cert from '../assets/Certifications/AWS Certified Solutions Architect - Associate certificate.png'
 import AWS_CCP_cert from '../assets/Certifications/AWS Certified Cloud Practitioner certificate.png'
 import SecPlus_cert from '../assets/Certifications/CompTIA Security+ ce certificate.png'
