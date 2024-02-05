@@ -158,7 +158,7 @@ input:-webkit-autofill:active{
    width: 30%;
    position: relative;
 }
-.btn-loader {
+.sent-message {
    position: absolute;
    display: flex;
    justify-content: center;
