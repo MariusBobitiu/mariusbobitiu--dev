@@ -1,9 +1,9 @@
-import { useDispatch } from "react-redux";
-import { showLoader } from "./features/form/uiSlice";
+// import { useDispatch } from "react-redux";
+// import { showLoader } from "./features/form/uiSlice";
 const BASE_API_URL = 'https://wr59u9702c.execute-api.eu-west-2.amazonaws.com'
 
 const useSubmitForm = () => {
-   const dispatch = useDispatch();
+   // const dispatch = useDispatch();
    const validateEmail = (input) => {
       const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
       return regex.test(input);
@@ -39,7 +39,7 @@ const useSubmitForm = () => {
                    alert('Failed to send message. Please try again.');
                    return;
                }
-               dispatch(showLoader());
+               // dispatch(showLoader());
       }catch(err){
          console.log(err);
       }

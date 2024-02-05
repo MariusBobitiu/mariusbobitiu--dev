@@ -4,7 +4,7 @@ import { updateForm, resetForm } from './features/form/formSlice';
 import useSubmitForm from './SubmitForm';
 import DOMPurify from 'dompurify';
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
-import { hideLoader } from './features/form/uiSlice';
+import { hideLoader, showLoader } from './features/form/uiSlice';
 
 
 function ContactForm() {
@@ -39,6 +39,7 @@ function ContactForm() {
 
    const onSubmit = (e) => {
       e.preventDefault();
+      dispatch(showLoader());
       submitForm(form).then(() => {
          dispatch(hideLoader());
          sentMessageHandler();
