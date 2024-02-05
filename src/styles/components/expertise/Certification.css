@@ -118,10 +118,15 @@
       gap: 2.5% 2.5%;
    }
    .certifications--container {
-      height: 60dvh;
+      height: 80dvh;
    }
    .card {
       width: 100%;
    }
+}
 
+@media screen and (min-width: 640px) and (max-height: 460px) {
+   .certifications--container {
+      height: 180dvh;
+   }
 }

@@ -212,3 +212,130 @@
 .modal-content-image .img-flex .copy-message.visible {
    opacity: 1;
 }
+
+
+@media screen and (max-width: 600px) {
+   .modal-content-image {
+      width: 90%;
+      justify-content: space-around;
+  }
+  .modal-content-image .img-flex {
+      gap: 15px;
+  }
+  .modal-content-image .img-flex p.code {
+      font-size: 12px;
+      word-spacing: normal;
+  }
+  .modal-content-image .img-flex p.val-link {
+      font-size: 12px;
+      word-spacing: normal;
+  }
+  .modal-content {
+      width: 90%;
+      height: 75dvh;
+      overflow: scroll;
+      p {
+         font-size: 9px;
+      }
+      .flex-li li {
+         font-size: 9px;
+      }
+  }
+  .modal-content .flex-li p.li-title {
+      font-size: 12px;
+      margin-left: -25%;
+  }
+  .modal-content .flex-li ul {
+      padding-inline-start: 20px;
+  }
+  .modal-content .cert-skills {
+      display: grid;
+      grid: 
+         "no-border no-border" 1fr
+         ". ." 1fr
+         ". ." 1fr
+         ". ." 1fr
+         / 1fr 1fr;
+      .cert-skill {
+         align-self: center;
+         justify-self: center;
+      }
+  }
+  .cert-skill.no-border {
+      grid-area: no-border; 
+  }
+  .modal-content .cert-skills .cert-skill{
+      font-size: 10px;
+      padding: 5px;
+      width: 80%;
+      height: 95%;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+   .modal-content {
+      width: 85%;
+      height: 75dvh;
+      overflow-y: scroll;
+   }
+   .modal-content .cert-skills {
+      display: grid;
+      grid:
+      "no-border no-border no-border" 1fr
+      ". . ." 1fr
+      ". . ." 1fr
+      / 1fr 1fr 1fr;
+      gap: 8px;
+   }
+   .no-border {
+      grid-area: no-border;
+   }
+
+  .modal-skills {
+      text-align: center;
+      font-size: 26px;
+      color: var(--dark-mode-accent-color);
+  }
+  .modal-content-image {
+      width: 80%;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+   .modal-content {
+      width: 75%;
+      height: 75dvh;
+      overflow-y: scroll;
+
+      p {
+         font-size: 14px;
+      }
+
+      .flex-li li {
+         font-size: 12.5px;
+      }
+   }
+   .modal-content .cert-skills {
+      display: grid;
+      grid:
+        "no-border no-border no-border" 1fr
+        ". . ." 1fr
+        ". . ." 1fr
+        / 1fr 1fr 1fr;
+      gap: 8px;
+   }
+    
+    .no-border { 
+      grid-area: no-border; 
+   }
+   .modal-skills {
+      display: unset;
+      text-align: center;
+      font-size: 26px;
+      color: var(--dark-mode-accent-color);
+  }
+  .modal-content-image {
+      width: 50%;
+      z-index: 100;
+  }
+}

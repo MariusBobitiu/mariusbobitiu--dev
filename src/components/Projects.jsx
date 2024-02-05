@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { fetchProjects } from '../helpers/features/projects/projectSlice';
 import Project from '../helpers/Project';
 import '../styles/components/Projects.css';
+// import { Link } from 'react-router-dom'
 
 function Projects({ value }) {
    const dispatch = useDispatch();
@@ -32,6 +33,7 @@ function Projects({ value }) {
                      github={project.github}
                      dribbble={project.dribbble}
                      website={project.website}
+                     technologies={project.technologies}
                   />
                </div>
             )

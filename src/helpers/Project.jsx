@@ -2,9 +2,10 @@ import React from 'react';
 import { IconContext } from 'react-icons';
 import { FaDribbble, FaGithub } from 'react-icons/fa';
 import { FiGlobe } from "react-icons/fi";
+import { RiCodeFill, RiCodeSSlashFill } from 'react-icons/ri';
 
 
-function Project({ image, name, startDescription, description, github, dribbble, website }) {
+function Project({ image, name, technologies, startDescription, description, github, dribbble, website }) {
   
   return (
   <>
@@ -35,7 +36,10 @@ function Project({ image, name, startDescription, description, github, dribbble,
         </IconContext.Provider>
       </div>
       <h3><span className="ubuntu">~$</span> {name} </h3>
-      <p>{startDescription} <span>{description}</span></p>
+      <div className="project-title--container">
+        <p>{startDescription} <span>{description}</span></p>
+        <p className="technologies"><RiCodeFill /><span className="technologies-span">{technologies}</span><RiCodeSSlashFill /></p>
+      </div>
     </div>
   </>
   )

@@ -50,6 +50,10 @@
 }
 .project--card {
    padding: 15px;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
 }
 .project--card .project--image{
    position: relative;
@@ -95,8 +99,30 @@
 
 .project--card h3 {
    font-family: 'Ubuntu Mono', serif;
-   margin: 15px;
-   font-size: 24px;
+   margin-bottom: 3px;
+   font-size: 22px;
+   margin: 5px 15px;
+}
+.project-title--container {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+.project-title--container .technologies-span {
+   font-family: 'Ubuntu Mono', serif;
+   font-size: 14px;
+   color: rgba(33, 230, 237, 0.80);
+   margin: 0 3px;
+   opacity: 1;
+}
+.project-title--container .technologies {
+   text-align: end;
+   margin: 5px 25px 0 0;
+}
+.technologies svg {
+   margin: 0 3px -3.5px 3px;
+   fill: rgba(33, 230, 237, 0.6);
+   font-weight: 700;
 }
 .project--card .ubuntu {
    margin-left: 0;
