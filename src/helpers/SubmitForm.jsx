@@ -2,7 +2,6 @@ import { useDispatch } from "react-redux";
 import { showLoader } from "./features/form/uiSlice";
 const BASE_API_URL = 'https://wr59u9702c.execute-api.eu-west-2.amazonaws.com'
 
-
 const useSubmitForm = () => {
    const dispatch = useDispatch();
    const validateEmail = (input) => {
@@ -30,7 +29,6 @@ const useSubmitForm = () => {
 
 
       try { 
-         dispatch(showLoader());
          const res = await fetch(`${BASE_API_URL}/prod/send-email`, {
                    method: 'POST',
                    body: JSON.stringify(formData),
@@ -41,6 +39,7 @@ const useSubmitForm = () => {
                    alert('Failed to send message. Please try again.');
                    return;
                }
+               dispatch(showLoader());
       }catch(err){
          console.log(err);
       }
