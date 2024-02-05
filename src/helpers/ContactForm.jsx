@@ -1,14 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { updateForm, resetForm } from './features/form/formSlice';
 import useSubmitForm from './SubmitForm';
 import DOMPurify from 'dompurify';
+import { IoMdCheckmarkCircleOutline } from "react-icons/io";
+import { hideLoader } from './features/form/uiSlice';
 
 
 function ContactForm() {
    const dispatch = useDispatch();
    const form = useSelector(state => state.form);
    const submitForm = useSubmitForm();
+   const [sentMessage, setSentMessage] = useState('');
+   const loaderVisible = useSelector(state => state.ui.loaderVisible);
 
    const handleInputChange = (event) => {
        const { name, value } = event.target;
@@ -26,10 +30,18 @@ function ContactForm() {
        dispatch(updateForm({ ...form, [name]: sanitizedValue }));
    };
    
+   const sentMessageHandler = () => {
+      setSentMessage('visible');
+      setTimeout(() => {
+         setSentMessage('');
+      }, 3500);
+   }
 
    const onSubmit = (e) => {
       e.preventDefault();
       submitForm(form).then(() => {
+         dispatch(hideLoader());
+         sentMessageHandler();
          dispatch(resetForm());
       });
    }
@@ -93,6 +105,8 @@ function ContactForm() {
             </div>
             <button type="submit" className='btn submit--btn'>
                <span><span className="ubuntu"> ~$ </span> send </span>
+               {loaderVisible && <div className='btn-loader'><div className="spinner"></div></div> }
+               <div className={`sent-message ${sentMessage}`}><IoMdCheckmarkCircleOutline /> sent</div>
             </button>
          </form>
       </div>
