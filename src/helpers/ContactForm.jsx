@@ -43,7 +43,7 @@ function ContactForm() {
       submitForm(form).then(() => {
          sentMessageHandler();
          dispatch(hideLoader());
-         dispatch(resetForm());
+         // dispatch(resetForm());
       });
    }
 
