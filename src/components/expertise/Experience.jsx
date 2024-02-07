@@ -3,7 +3,7 @@ import '../../styles/components/expertise/Experience.css';
 import { FiExternalLink } from "react-icons/fi";
 import { FaImage } from "react-icons/fa6";
 import ModalImage from '../../components/expertise/ModalImage';
-import { certification } from '../../helpers/CertificationsList'
+import { certification } from '../../helpers/CertificationsList';
 
 
 function Experience() {
@@ -48,16 +48,18 @@ function Experience() {
                </div>
             </div>
                <div className="resume-container no-company">
-                  <div className="job-container">
-                        <h1 className="position">Level 1 Technical Support Specialist</h1>
-                        <p className="date">Jun 2023 - Dec 2023</p>
-                        <ul>
-                           <li><strong className="accent">Effective Product Release Management:</strong> Successfully led testing for a new product version, ensuring a 15% reduction in post-release issues.</li>
-                           <li><strong className="accent">Security Expertise and Incident Resolution:</strong> Utilized Security+ knowledge to investigate and resolve a Windows Defender alert, achieving a 20% decrease in false positives.</li>
-                           <li><strong className="accent">PCI DSS Compliance Leadership:</strong> Played a pivotal role in documenting PCI DSS Compliance requirements, leading to the successful certification and enabling secure online payments.</li>
-                           <li><strong className="accent">Rapid Learning and Certification Attainment:</strong> Demonstrated exceptional adaptability, mastering in-house technology within a month and a half.</li>
-                        </ul>
-                  </div>
+                  {/* <ScrollAnimation animateIn="fadeInLeft" animateOut="fadeInLeft"> */}
+                     <div className="job-container">
+                           <h1 className="position">Level 1 Technical Support Specialist</h1>
+                           <p className="date">Jun 2023 - Dec 2023</p>
+                           <ul>
+                              <li><strong className="accent">Effective Product Release Management:</strong> Successfully led testing for a new product version, ensuring a 15% reduction in post-release issues.</li>
+                              <li><strong className="accent">Security Expertise and Incident Resolution:</strong> Utilized Security+ knowledge to investigate and resolve a Windows Defender alert, achieving a 20% decrease in false positives.</li>
+                              <li><strong className="accent">PCI DSS Compliance Leadership:</strong> Played a pivotal role in documenting PCI DSS Compliance requirements, leading to the successful certification and enabling secure online payments.</li>
+                              <li><strong className="accent">Rapid Learning and Certification Attainment:</strong> Demonstrated exceptional adaptability, mastering in-house technology within a month and a half.</li>
+                           </ul>
+                     </div>
+                  {/* </ScrollAnimation> */}
                </div>
                <div className="border--container">
                   <div className="resume-container">

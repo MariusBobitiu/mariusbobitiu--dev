@@ -19,7 +19,7 @@ function Projects({ value }) {
          <p className='title'> Projects </p>
       </div>
       <div className={`projects-container--grid ${value}`}>
-         {loading && <p>Loading...</p>}
+         {loading && <div className='btn-loader'><div className="spinner"></div></div>}
          {error && <p>Error: {error}</p>}
          {!loading && !error && projects.map((project, index) => {
             return (
@@ -38,7 +38,6 @@ function Projects({ value }) {
                </div>
             )
          })}
-
       </div>
       {/* <div className="see-more--container">
          <Link to='/' className="btn ">
