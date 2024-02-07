@@ -26,11 +26,11 @@ function Navbar() {
       <div className="navbar">
           <HiMenu onClick={handleToggleNavbar} className='menuIcon' />
           <div className={navbarMenuClass}>
-              <div className='navbar--top'>
-                  <p> MAIN MENU </p>
-                  <span onClick={() => dispatch(toggleNavbar())}> <IoCloseCircleOutline /> </span>
-              </div>
-              <ul className='navbar--links'>
+            <div className='navbar--top'>
+                <p> MAIN MENU </p>
+                <span onClick={() => dispatch(toggleNavbar())}> <IoCloseCircleOutline /> </span>
+            </div>
+            <ul className='navbar--links'>
                 <li onClick={() => {
                     handleChangeActiveSection('homepage');
                     dispatch(toggleNavbar()); }}
@@ -64,8 +64,8 @@ function Navbar() {
                 >
                     Contact
                 </li>
-              </ul>
-          </div>
+            </ul>
+        </div>
       </div>
   );
   

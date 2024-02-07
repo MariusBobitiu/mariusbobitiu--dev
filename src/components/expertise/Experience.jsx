@@ -31,20 +31,21 @@ function Experience() {
             </div>
             <div className="border--container">
                <div className="resume-container">
-                  <h1 className="company"><a href='https://meter-macs.com' target="_blank" className="company-link" id="Meter-Macs" rel='noreferrer'>Meter Macs Ltd&nbsp;<FiExternalLink /></a></h1>
-                  <div className="job-container">
-                        <h1 className="position">Level 2 Technical Support Specialist</h1>
-                        <p className="date">Dec 2023 - Present</p>
-                        <p className="more-info">As a recent promotee to Level 2 Technical Support Specialist, I am currently in the process of settling into my new role and acquiring a wealth of experience. 
-                           Updates on my journey and detailed insights into this position will be shared soon. 
-                           Stay tuned for more information on my professional growth and achievements in this advanced capacity.</p>
-                        {/* <!-- <ul>
-                           <li> 1st skill learned </li>
-                           <li> 2nd skill learned </li>
-                           <li> 3rd skill learned </li>
-                           <li> 4th skill learned </li>
-                        </ul> --> */}
-                  </div>
+
+                     <h1 className="company"><a href='https://meter-macs.com' target="_blank" className="company-link" id="Meter-Macs" rel='noreferrer'>Meter Macs Ltd&nbsp;<FiExternalLink /></a></h1>
+                     <div className="job-container">
+                           <h1 className="position">Level 2 Technical Support Specialist</h1>
+                           <p className="date">Dec 2023 - Present</p>
+                           <p className="more-info">As a recent promotee to Level 2 Technical Support Specialist, I am currently in the process of settling into my new role and acquiring a wealth of experience. 
+                              Updates on my journey and detailed insights into this position will be shared soon. 
+                              Stay tuned for more information on my professional growth and achievements in this advanced capacity.</p>
+                           {/* <!-- <ul>
+                              <li> 1st skill learned </li>
+                              <li> 2nd skill learned </li>
+                              <li> 3rd skill learned </li>
+                              <li> 4th skill learned </li>
+                           </ul> --> */}
+                     </div>
                </div>
             </div>
                <div className="resume-container no-company">
@@ -144,7 +145,7 @@ function Experience() {
                <div id="modalTHMcert" className="modal-image">
                   <div className="modal-content-image">
                         <span className="close" onClick={handleCloseModal}>&times;</span>
-                        <img src="ref/Certifications/TryHackMe - SOC Level 1.png" alt="THM Certificate" />
+                        <img src="ref/Certifications/TryHackMe - SOC Level 1.png" loading='lazy' alt="THM Certificate" />
                   </div>                        
                </div>
             </div>

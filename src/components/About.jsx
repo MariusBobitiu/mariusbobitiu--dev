@@ -8,7 +8,7 @@ function About({ value }) {
       <p className="title"> About Me </p>
          <div className={`containers ${value}`}>
             <div className="img-container">
-               <div className="image"><img src={avatar} alt="Avatar of Marius Bobitiu" /></div>
+               <div className="image"><img src={avatar} loading="lazy" alt="Avatar of Marius Bobitiu" /></div>
                <div className="short--descriptions">
                   <div className="short--descriptions--subject">Name: </div>
                   <div className="short--descriptions--text"><span>Marius-Catalin Bobitiu</span></div>

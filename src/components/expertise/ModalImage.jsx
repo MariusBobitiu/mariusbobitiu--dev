@@ -25,7 +25,7 @@ function ModalImage({certificationImage, onClose}) {
     <div className='modal-image visible'>
       <div className="modal-content-image">
          <span className="close" onClick={onClose}>&times;</span>
-         <img src={cert_image} alt={name} />
+         <img src={cert_image} loading="lazy" alt={name} />
          <div className="img-flex">
             <a href={link} id={id} target="_blank" rel="noreferrer"> <p className="val-link">Validation Link<FiExternalLink /></p> </a>
             <p className="code">{code} 

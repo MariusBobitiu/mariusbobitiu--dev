@@ -75,18 +75,18 @@ function Expertise() {
       <section className='landing' ref={landingRef}>
         <div className={`header ${scrollClass}`}></div>
         <div className="heroImage">
-          <div className="centered--section--expertise">
-            <h2 className="landing--title">Crafting Tomorrow's Tech, Today.</h2>
-            <p className="landing--text"> In the ever-evolving landscape of technology, I blend innovation with expertise to architect solutions in DevSecOps, cloud computing, and software development. Let's explore the possibilities together.</p>
-            <div className="buttons">
-              <a href={CV} target='_blank' rel='noreferrer' className='button button-download'><IoCloudDownloadOutline />Download CV</a>
-              <button 
-                className='button button-seeMore'
-                onClick={() => scrollToRef(summaryRef)}> 
-                  Learn More 
-                </button>
+            <div className="centered--section--expertise">
+              <h2 className="landing--title">Crafting Tomorrow's Tech, Today.</h2>
+              <p className="landing--text"> In the ever-evolving landscape of technology, I blend innovation with expertise to architect solutions in DevSecOps, cloud computing, and software development. Let's explore the possibilities together.</p>
+              <div className="buttons">
+                <a href={CV} target='_blank' rel='noreferrer' className='button button-download'><IoCloudDownloadOutline />Download CV</a>
+                <button 
+                  className='button button-seeMore'
+                  onClick={() => scrollToRef(summaryRef)}> 
+                    Learn More 
+                  </button>
+              </div>
             </div>
-          </div>
         </div>
         <div className='footer'>
           <div className="footer--cards-container">
@@ -157,7 +157,6 @@ function Expertise() {
           </div>
         </div>
       </section>
-
       <section className='experience--container'  ref={certificationRef}>
         <p className='title certifications'> Certifications </p>
         <div className="certifications--container">
@@ -177,7 +176,6 @@ function Expertise() {
         <p className='title' ref={resumeRef}> Resume </p>
         <Experience />
       </section>
-
       {selectedCertification && (
         <Modal 
           certification={selectedCertification} 

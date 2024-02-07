@@ -30,28 +30,28 @@ function Carousel(){
             }}
             >
             <SwiperSlide>
-               <img src={AWS} alt='Amazon Web Services Logo' />
+               <img src={AWS} loading="lazy" alt='Amazon Web Services Logo' />
             </SwiperSlide>
             <SwiperSlide>
-               <img src={CSS} alt='Cascade Style Sheet Logo' />
+               <img src={CSS} loading="lazy" alt='Cascade Style Sheet Logo' />
             </SwiperSlide>
             <SwiperSlide>
-            <img src={HTML} alt='Hypertext Markup Language Logo' />
+            <img src={HTML} loading="lazy" alt='Hypertext Markup Language Logo' />
             </SwiperSlide>
             <SwiperSlide>
-            <img src={JS} alt='JavaScript Logo' />
+            <img src={JS} loading="lazy" alt='JavaScript Logo' />
             </SwiperSlide>
             <SwiperSlide>
-            <img src={MYSQL} alt='Structured Query Language Logo' />
+            <img src={MYSQL} loading="lazy" alt='Structured Query Language Logo' />
             </SwiperSlide>
             <SwiperSlide>
-            <img src={Linux} alt='Linux Logo' />
+            <img src={Linux} loading="lazy" alt='Linux Logo' />
             </SwiperSlide>
             <SwiperSlide>
-            <img src={Terraform} alt='Terraform Logo' />
+            <img src={Terraform} loading="lazy" alt='Terraform Logo' />
             </SwiperSlide>
             <SwiperSlide>
-               <img src={ReactLogo} alt='React Logo' />  
+               <img src={ReactLogo} loading="lazy" alt='React Logo' />  
             </SwiperSlide>
          </Swiper>
       </div>
