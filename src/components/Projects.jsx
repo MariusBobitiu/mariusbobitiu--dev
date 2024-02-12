@@ -21,7 +21,10 @@ function Projects({ value }) {
       <div className={`projects-container--grid ${value}`}>
          {loading && <div className='btn-loader'><div className="spinner"></div></div>}
          {error && <p>Error: {error}</p>}
-         {!loading && !error && projects.map((project, index) => {
+         {!loading && !error && [...projects]
+         .sort((a,b) => a.id - b.id)
+         .slice(0,6)
+         .map((project, index) => {
             return (
                <div key={project.id} className="project-container">
                   <Project 

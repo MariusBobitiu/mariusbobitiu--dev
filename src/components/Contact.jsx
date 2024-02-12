@@ -42,7 +42,7 @@ function Contact({ value }) {
                         </a>
                      </li>
                      <li className="social--link">
-                        <a href='mailto:marius.bobitiu@icloud.com' 
+                        <a href='mailto:contact@mariusbobitiu.dev' 
                         target="_blank" rel="noreferrer"
                         aria-label='Contact Me'>
                            # contactMe

@@ -6,6 +6,8 @@ import './App.css';
 import Main from './pages/Main';
 import Projects from './pages/Projects';
 import Expertise from './pages/Expertise';
+import Policies from './pages/Policies';
+import DataRequestForm from './pages/DataRequestForm';
 
 
 const App = () => (
@@ -15,6 +17,8 @@ const App = () => (
         <Route path='/' exact element={ <Main /> } />
         <Route path='/expertise' exact element={ <Expertise /> } />
         <Route path='/projects' exact element={ <Projects /> } />
+        <Route path='/policies' exact element={ <Policies /> } />
+        <Route path='/policies/dataRequestForm' exact element={ <DataRequestForm /> } />
       </Routes>
     </BrowserRouter>
   </Provider>

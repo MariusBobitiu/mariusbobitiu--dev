@@ -85,8 +85,8 @@
    height: 100%;
    position: absolute;
    top: 0; left: 0;
-   backdrop-filter: blur(2px);
-   background-color: rgba(33, 230, 237, 0.1);
+   backdrop-filter: blur(3px);
+   background-color: rgba(6,37,38, 0.25);
    z-index: -1;
    transition: all 0.2s linear;
 }

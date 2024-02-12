@@ -145,6 +145,7 @@
    align-items: flex-end;
    justify-content: center;
    font-family: 'Ubuntu Mono', monospace;
+   z-index: 20;
 }
 .copyright svg {
    font-size: 13px;
