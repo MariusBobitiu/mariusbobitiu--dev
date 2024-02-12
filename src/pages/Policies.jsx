@@ -12,7 +12,7 @@ function Policies() {
     <div className='policies'>
       <Navbar />
       <div className='policy--header'>
-         <p>Your privacy in a nutshell</p>
+         <p className='policy--header-title'>Privacy Matters: Safeguarding Your Data</p>
       </div>
       <div className="policies--top-side">
          <ul className="policies--list">

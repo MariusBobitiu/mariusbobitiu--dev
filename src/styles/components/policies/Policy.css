@@ -68,3 +68,30 @@
 .c-list:nth-child(odd) {
    text-align: end;
 }
+
+@media screen and (max-width: 768px) {
+   .p-title {
+      font-size: 24px;
+   }
+   .p-subtitle {
+      font-size: 18px;
+   }
+   .p-text {
+      font-size: 12px;
+   }
+   .p-boldText {
+      font-size: 13px;
+   }
+   .p-list {
+      font-size: 12px;
+   }
+   .c-cookie {
+      padding: 15px;
+   }
+   .c-lists {
+      grid-template-columns: 25% 75%;
+   }
+   .c-list {
+      font-size: 12px;
+   }
+}

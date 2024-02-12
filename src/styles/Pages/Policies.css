@@ -23,6 +23,7 @@
    p {
       font-family: 'Space Mono', 'Syne Mono', monospace;
       font-size: 48px;
+      text-align: center;
    }
 }
 .policies--top-side {
@@ -35,6 +36,7 @@
 .policies--list {
    display: flex;
    gap: 25px;
+   text-align: center;
 }
 .policies-items {
    cursor: pointer;
@@ -53,4 +55,30 @@
    height: calc(100% - 160px - 15%);
    overflow-y: scroll;
    align-self: center;
+}
+
+@media screen and (min-width:480px) and (max-width: 768px){
+   .policies--bottom-side {
+      width: 90%;
+   }
+   .policy--header {
+      p {
+         font-size: 32px;
+      }
+   }
+}
+@media screen and (max-width: 480px) {
+   .policy--header {
+      p {
+         font-size: 24px;
+      }
+   }
+}
+@media screen and (min-width: 1440px ) {
+   .policies--bottom-side {
+      width: 60%;
+   }
+   .policies-items {
+      font-size: 24px;
+   }
 }
