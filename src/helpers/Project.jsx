@@ -18,17 +18,17 @@ function Project({ image, name, technologies, startDescription, description, git
         <IconContext.Provider value={{ size: '35px' }} >
           <div className='project--links'>
             { github ? (
-              <a href={github}>
+              <a href={github} target='_blank' rel='noreferrer' aria-label='github link'>
                 <FaGithub />
               </a>
             ) : null }
             { dribbble ? (
-              <a href={dribbble}>
+              <a href={dribbble} target='_blank' rel='noreferrer' aria-label='dribbble link'>
                 <FaDribbble />
               </a>
             ) : null }
             { website ? (
-              <a href={website}>
+              <a href={website} target='_blank' rel='noreferrer' aria-label='website link'>
                 <FiGlobe />
               </a>
             ) : null }
