@@ -1,0 +1,70 @@
+.p-title {
+   font-family: 'Ubuntu Mono', monospace;
+   text-transform: uppercase;
+   font-size: 32px;
+   margin: 10px 0;
+}
+.p-subtitle {
+   font-family: 'Ubuntu Mono', monospace;
+   font-size: 22px;
+   margin: 7px 0;
+}
+.p-text {
+   font-family: 'Space Mono', 'Syne Mono', monospace;
+   font-size: 16px;
+   color: rgba(249,250,254, 0.8);
+}
+.p-text.italic {
+   font-style: italic;
+}
+.p-boldText {
+   font-family: 'Space Mono', 'Syne Mono', monospace;
+   font-weight: 700;
+   font-size: 18px;
+   color: rgba(249,250,254, 0.8);
+}
+.p-link {
+   font-family: 'Space Mono', 'Syne Mono', monospace;
+   color: rgba(33, 230, 237, 0.8);
+}
+.p-lists {
+   margin-block-start: 10px;
+   margin-block-end: 10px;
+   margin-inline-start: 0px;
+   margin-inline-end: 0px;
+   padding-inline-start: 40px;
+}
+.p-list {
+   font-family: 'Space Mono', 'Syne Mono', monospace;
+   font-size: 16px;
+   margin: 5px 0;
+}
+.p-list svg {
+   fill: rgba(33, 230, 237, 0.7);
+   margin: 0 0 -2px 0;
+}
+.p-link:hover {
+   color: rgba(33, 230, 237, 0.4)
+}
+
+.c-cookie {
+   padding: 25px;
+   border-radius: 16px;
+   border: 1px solid rgba(33,230,237, 0.2);
+   margin: 15px 0;
+   box-shadow: 0 2px 5px rgba(33,230,237, 0.1);
+}
+.c-lists {
+   display: grid;
+   grid-template-columns: 15% 85%;
+   grid-template-rows: repeat(7, auto);
+   gap: 0 10px;
+}
+.c-list {
+   font-family: 'Space Mono', 'Syne Mono', monospace;
+   font-size: 16px;
+   margin: 0;
+}
+.c-list:nth-child(odd) {
+   text-align: end;
+}
