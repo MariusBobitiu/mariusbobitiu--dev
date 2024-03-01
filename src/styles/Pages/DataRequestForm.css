@@ -1,141 +1,119 @@
 .dataForm--container {
-   height: 100dvh;
-   width: 100dvw;
-   background: linear-gradient(to right bottom, #070508, #0a090f, #0a0e14, #081218,  #081218, #0a0e14, #0a090f, #070508);
-   display: flex;
-   flex-direction: column;
+    height: 100dvh;
+    width: 100dvw;
+    background: linear-gradient(to right bottom, #070508, #0a090f, #0a0e14, #081218,  #081218, #0a0e14, #0a090f, #070508);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main--container {
+    width: 80%;
+    height: 80%;
+    background: rgba(33, 230, 237, 0.02);
+    border: 1px solid rgba(33, 230, 237, 0.4);
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2.5rem 3.25rem;
 }
 .f-title {
-   text-align: center;
-   font-family: 'Ubuntu Mono', monospace;
-   font-size: 42px;
-   margin-top: 2.5%;
+    text-align: center;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 32px;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
 }
-.f-description {
-   text-align: center;
-   font-family: 'Space Mono', 'Syne Mono', monospace;
-   font-size: 14px;
-   color: rgba(249, 250, 254, 0.7);
+.f-subtitle {
+    text-align: center;
+    font-family: 'Space Mono', 'Syne Mono', monospace;
+    font-size: 24px;
+    color: rgba(249, 250, 254, 0.8);
 }
-.request--form {
-   width: 75%;
-   align-self: center;
-   padding: 2.5rem 3.25rem;
-   border-radius: 24px;
-   border: 1px solid rgba(33, 230, 237, 0.4);
+.f-subtitle svg {
+    margin-bottom: -9px;
+    font-size: 36px;
+    fill: #21e6ed;
 }
-.label--request-form {
-   font-family: 'Space Mono', 'Syne Mono', monospace;
-   font-size: 18px;
+.f-text {
+    /* text-align: center; */
+    font-family: 'Space Mono', 'Syne Mono', monospace;
+    font-size: 16px;
+    color: rgba(249, 250, 254, 0.7);
+    margin-top: 2.5%;
 }
-.input--container {
-   margin: 10px 0;
+.f-text .bold {
+    font-weight: bold;
 }
-.input--request-form{
-   font-family: 'Space Mono', 'Syne Mono', monospace;
-   font-size: 16px;
-   text-indent: 15px;
-   cursor: text;
-   padding: 10px 0;
-   border: 1px solid rgba(33, 230, 237, 0.2);
-   border-radius: 8px;
-   width: 100%;
+.f-text.sm-text {
+    font-size: 14px;
+    text-align: center;
 }
-[type=checkbox],[type=radio] {
-   -webkit-appearance: none;
-   -moz-appearance: none;
-   appearance: none;
-   background-color: #fff;
-   background-origin: border-box;
-   border-color: #6b7280;
-   border-width: 1px;
-   color: #2563eb;
-   display: inline-block;
-   flex-shrink: 0;
-   height: 1rem;
-   padding: 0;
-   -webkit-print-color-adjust: exact;
-   print-color-adjust: exact;
-   -webkit-user-select: none;
-   -moz-user-select: none;
-   user-select: none;
-   vertical-align: middle;
-   width: 1rem;
-   --tw-shadow: 0 0 #0000
+.f-b-text {
+    text-align: center;
+    font-family: 'Space Mono', 'Syne Mono', monospace;
+    font-size: 16px;
+    color: rgba(249, 250, 254, 0.7);
 }
-[type=checkbox] {
-   border-radius: 0
+.f-b-text.first-child {
+    color: rgba(249, 250, 254, 1);
+    font-weight: 600;
 }
-
-[type=radio] {
-   border-radius: 100%
+.f-list {
+    text-align: center;
+    font-family: 'Space Mono', 'Syne Mono', monospace;
+    font-size: 16px;
+    color: rgba(249, 250, 254, 0.7);
+    margin-top: 2.5%;
 }
-.label--input-radio {
-   display: flex;
+.f-list-item {
+    color: rgba(249, 250, 254, 0.8);
 }
-[type=checkbox]:focus,[type=radio]:focus {
-   outline: 2px solid transparent;
-   outline-offset: 2px;
-   --tw-ring-inset: var(--tw-empty, );
-   --tw-ring-offset-width: 2px;
-   --tw-ring-offset-color: #fff;
-   --tw-ring-color: #2563eb;
-   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-   box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow)
+.f-list-item svg {
+    font-size: 18px;
+    margin-bottom: -4px;
+    margin-right: 5px;
+    stroke: #21e6ed;
 }
-[type=checkbox]:checked,[type=radio]:checked {
-   background-color: currentColor;
-   background-position: 50%;
-   background-repeat: no-repeat;
-   background-size: 100% 100%;
-   border-color: transparent
+.f-list-item a:hover {
+    color: #21e6ed;
+    cursor: pointer;
 }
-
-[type=checkbox]:checked {
-   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 16 16'%3E%3Cpath d='M12.207 4.793a1 1 0 0 1 0 1.414l-5 5a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L6.5 9.086l4.293-4.293a1 1 0 0 1 1.414 0'/%3E%3C/svg%3E")
+.f-list-item a {
+    color: rgba(249, 250, 254, 1);
+    text-decoration: none;
+    font-family: 'Space Mono', 'Syne Mono', monospace;
 }
-[type=radio]:checked {
-   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='3'/%3E%3C/svg%3E")
+.button {
+    font-family: 'Space Mono', 'Syne Mono', monospace;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(249, 250, 254, 1);
+    background-color: rgba(33, 230, 237, 0.4);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin-top: 2.5%;
+    cursor: pointer;
+    transition: 0.3s;
 }
-@media (forced-colors:active) {
-   [type=radio]:checked {
-       -webkit-appearance: auto;
-       -moz-appearance: auto;
-       appearance: auto
-   }
+.button:hover {
+    background-color: rgba(33, 230, 237, 0.6);
 }
-
-[type=checkbox]:checked:focus,[type=checkbox]:checked:hover,[type=radio]:checked:focus,[type=radio]:checked:hover {
-   background-color: currentColor;
-   border-color: transparent
+.button:active{
+    background-color: rgba(33, 230, 237, 0.8);
+    transform: scale(0.95);
 }
-
-[type=checkbox]:indeterminate {
-   background-color: currentColor;
-   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 16 16'%3E%3Cpath stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 8h8'/%3E%3C/svg%3E");
-   background-position: 50%;
-   background-repeat: no-repeat;
-   background-size: 100% 100%;
-   border-color: transparent
+.button:focus {
+    outline: none;
+    background-color: rgba(33, 230, 237, 0.6);
 }
-
-@media (forced-colors:active) {
-   [type=checkbox]:indeterminate {
-       -webkit-appearance: auto;
-       -moz-appearance: auto;
-       appearance: auto
-   }
+.f-b-text a:hover{
+    color: #21e6ed;
+    cursor: pointer;
 }
-
-[type=checkbox]:indeterminate:focus,[type=checkbox]:indeterminate:hover {
-   background-color: currentColor;
-   border-color: transparent
-}
-@media (forced-colors:active) {
-   [type=checkbox]:checked {
-       -webkit-appearance: auto;
-       -moz-appearance: auto;
-       appearance: auto
-   }
+a:focus {
+    color: #21e6ed;
+    cursor: pointer;
 }

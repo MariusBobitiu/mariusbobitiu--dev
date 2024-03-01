@@ -14,11 +14,11 @@ const App = () => (
   <Provider store={store}>
     <BrowserRouter>
       <Routes>
-        <Route path='/' exact element={ <Main /> } />
-        <Route path='/expertise' exact element={ <Expertise /> } />
-        <Route path='/projects' exact element={ <Projects /> } />
-        <Route path='/policies' exact element={ <Policies /> } />
-        <Route path='/policies/dataRequestForm' exact element={ <DataRequestForm /> } />
+        <Route path='/' element={ <Main /> } />
+        <Route path='/expertise' element={ <Expertise /> } />
+        <Route path='/projects' element={ <Projects /> } />
+        <Route path='/policies' element={ <Policies /> } />
+        <Route path='/policies/dataRequestForm' element={ <DataRequestForm /> } />
       </Routes>
     </BrowserRouter>
   </Provider>

@@ -14,6 +14,9 @@
    font-size: 16px;
    color: rgba(249,250,254, 0.8);
 }
+.p-text.tc-mb {
+   margin-bottom: 20px;
+}
 .p-text.italic {
    font-style: italic;
 }

@@ -70,7 +70,7 @@ function HomePage({ value }) {
                   >
                      <IconContext.Provider value={{ size: '30px' }} >
                         <div>
-                           <a href='https://www.linkedin.com/in/marius-b-4235b5266/' target='_blank' rel="noreferrer">
+                           <a href='https://www.linkedin.com/in/marius-b-4235b5266/' target='_blank' rel="noreferrer" aria-label='Linkedin Link'>
                               <FaLinkedin />
                            </a>
                         </div>
@@ -82,7 +82,7 @@ function HomePage({ value }) {
                   >
                      <IconContext.Provider value={{ size: '30px' }} >
                         <div>
-                           <a href='https://github.com/Xendorr' target='_blank' rel="noreferrer">
+                           <a href='https://github.com/Xendorr' target='_blank' rel="noreferrer" aria-label='Github link'>
                               <FaGithub />
                            </a>
                         </div>
@@ -94,7 +94,7 @@ function HomePage({ value }) {
                   >
                      <IconContext.Provider value={{ size: '30px' }} >
                         <div>
-                           <a href='https://dribbble.com/mariusbobitiu' target='_blank' rel='noreferrer'>   
+                           <a href='https://dribbble.com/mariusbobitiu' target='_blank' rel='noreferrer' aria-label='Dribble Link'>   
                               <FaDribbble />
                            </a>
                         </div>
@@ -106,7 +106,7 @@ function HomePage({ value }) {
                   >
                      <IconContext.Provider value={{ size: '30px' }} >
                         <div>
-                           <a href='mailto:contact@mariusbobitiu.dev' target='_blank' rel="noreferrer">
+                           <a href='mailto:contact@mariusbobitiu.dev' target='_blank' rel="noreferrer" aria-label='Send me an e-mail'>
                               <LuMailPlus />
                            </a>
                         </div>
@@ -116,7 +116,7 @@ function HomePage({ value }) {
             </div>
          </div>
          <div className="copyright--container">
-               <p className="copyright"><FaRegCopyright /> 2024.&nbsp;<a href='https://www.linkedin.com/in/marius-b-4235b5266/' target='_blank' rel='noreferrer'>Marius Bobitiu&nbsp;</a>- All rights reserved. See&nbsp;<a href="/policies">User Agreements.</a></p>            
+               <p className="copyright"><FaRegCopyright /> {`2023 - ${new Date().getFullYear()}`}.&nbsp;<a href='https://www.linkedin.com/in/marius-b-4235b5266/' target='_blank' rel='noreferrer'>Marius Bobitiu&nbsp;</a>- All rights reserved. See&nbsp;<a href="/policies">User Agreements.</a></p>            
          </div>
       </div>
   )

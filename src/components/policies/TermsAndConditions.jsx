@@ -22,7 +22,7 @@ function TermsAndConditions() {
         <br />
         <p className="p-text">The Services are intended for users who are at least 18 years old. Persons under the age of 18 are not permitted to use or register for the Services.</p>
         <br /> 
-        <p className="p-text">We recommend that you print a copy of these Legal Terms for your records.</p>     
+        <p className="p-text tc-mb">We recommend that you print a copy of these Legal Terms for your records.</p>     
       
       
       </div>

@@ -1,0 +1,11 @@
+{
+  "short_name": "Marius Bobitiu Personal Website",
+  "name": "Personal Website for an enthusiast Cloud DevSecOps engineer",
+  "icons": [
+    
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#21E6ED",
+  "background_color": "#09070A"
+}

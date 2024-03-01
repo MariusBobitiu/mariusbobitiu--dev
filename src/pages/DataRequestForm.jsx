@@ -1,53 +1,41 @@
 import React from 'react';
 import '../styles/Pages/DataRequestForm.css';
+import { BiSolidTrafficBarrier } from "react-icons/bi";
+import { LuMailPlus } from "react-icons/lu";
+import { HiOutlinePencilAlt } from "react-icons/hi";
 
-// TODO finish the form
-
-function DataRequestForm() {
+const DataRequestForm = () => {
   return (
-   <div className='dataForm--container'>
-      <br />
-      <h1 className="f-title">Data Subject Access Request Form</h1>
-      <br />
-      <h2 className="f-description">Please fill in the information bellow. The website administrator or data protection officer will be notified of your request within 24 hours, and will need an appropriate amount of time to respond.</h2>
-      <br />
-      <br />
-      <div className="request--form">
-         <label className='label--request-form'>Website</label>
-         <div className="input--container">
-            <label htmlFor="website" className="label--input">
-               <input name="website" type="text" placeholder='mariusbobitiu.dev' className='input--request-form' />
-            </label>
-         </div>
-         <label className="label--request-form">Your Name</label>
-         <div className="input--container">
-            <label htmlFor="name" className="label--input">
-               <input name="name" type="text" placeholder='Enter your name' className='input--request-form' />
-            </label>
-         </div>
-         <label className="label--request-form">Email address</label>
-         <div className="input--container">
-            <label htmlFor="email" className="label--input">
-               <input name="email" type="email" placeholder='Enter your email address' className='input--request-form' />
-            </label>
-         </div>
-         <label className="label--request-form">You are submitting this request as</label>
-         <div className="input--container-radio">
-            <label htmlFor="request_as" className="label--input-radio">
-               <input name="request_as" hidden type="radio" value="personal"/>
-               <div className="checkmark"></div>
-               The person, or the parent/guardian of the person, whose name appears above.
-            </label>
-            <label htmlFor="request_as" className="label--input-radio">
-               <input name="request_as" hidden type="radio" value="agent"/>
-               <div className="checkmark"></div>
-               An agent authorized by the consumer to make this request on their behalf.
-            </label>
-         </div>
+    <div className='dataForm--container'>
+        <div className='main--container'>
+            <div>
+                <h1 className='f-title'><span className='accent'>Notice: </span>Data Subject Access Request Form Under Construction</h1>
+            </div>
 
-      </div>
-   </div>
+            <div>
+                <h2 className='f-subtitle'><BiSolidTrafficBarrier /> We're making improvements! <BiSolidTrafficBarrier /></h2>
+                <br />
+                <p className='f-text'>Our Data Access Request page is currently being upgraded to enhance your experience. We apologize for any inconvenience and appreciate your patience during this process.</p>
+                <p className='f-text'><span className='bold'>Need data now?</span> No problem! Please reach out directly, and I'll personally assist you with your request.</p>
+                <br />
+                <ul className='f-list'>
+                    <li className='f-list-item'><LuMailPlus /> Email me at: <a href='mailto:contact@mariusbobitiu.dev' aria-label='Link to email'> contact@mariusbobitiu.dev </a></li>
+                    <li className='f-list-item'><HiOutlinePencilAlt /> Or use the <a href='https://mariusbobitiu.dev/contact' aria-label='Contact page'> contact Form </a></li>
+                </ul>
+                <br />
+                <p className='f-text sm-text'>Thank you for your understanding. I'm excited to bring you a better service soon!</p>
+            </div>
+            <br />
+            <div>
+                <p className='f-b-text first-child'>- Marius Bobitiu</p>
+                <p className='f-b-text'>Portfolio Owner</p>
+                <p className='f-b-text'><a href='https://mariusbobitiu.dev' aria-label='Marius Bobitiu Developer Portfolio link'>mariusbobitiu--dev</a></p>
+                <p className='f-b-text'>Last updated: 01-Mar-2024</p>
+            </div>
+            <a href='/' aria-label='Home page' className='button'>Go Home</a>
+        </div>
+    </div>
   )
 }
 
-export default DataRequestForm;
+export default DataRequestForm

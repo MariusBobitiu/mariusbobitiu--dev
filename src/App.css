@@ -63,3 +63,9 @@ input {
  ::-webkit-scrollbar-thumb:hover {
    background-color: var(--primary-color);
  }
+
+ /* Selection color */
+  ::selection {
+      background-color: rgba(33, 230, 237, 0.5);
+      color: rgba(249, 250, 254, 1);
+  }

@@ -53,9 +53,9 @@ function Navbar() {
                     Projects
                 </li>
                 <Link to='/expertise'>
-                    <li className="navbar--link">
+                    <div className="navbar--link">
                         Expertise
-                    </li>
+                    </div>
                 </Link>
                 <li onClick={() => {
                     handleChangeActiveSection('contact');
