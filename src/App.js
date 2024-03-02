@@ -20,7 +20,7 @@ const App = () => (
         <Route path='/projects' element={ <Projects /> } />
         <Route path='/policies' element={ <Policies /> } />
         <Route path='/policies/dataRequestForm' element={ <DataRequestForm /> } />
-        <Route path='/404' element = {<Error />} />
+        <Route path='*' element={<Error />} />
       </Routes>
     </BrowserRouter>
   </Provider>
