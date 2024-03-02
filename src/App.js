@@ -8,6 +8,7 @@ import Projects from './pages/Projects';
 import Expertise from './pages/Expertise';
 import Policies from './pages/Policies';
 import DataRequestForm from './pages/DataRequestForm';
+import Error from './pages/Error';
 
 
 const App = () => (
@@ -19,6 +20,7 @@ const App = () => (
         <Route path='/projects' element={ <Projects /> } />
         <Route path='/policies' element={ <Policies /> } />
         <Route path='/policies/dataRequestForm' element={ <DataRequestForm /> } />
+        <Route path='/404' element = {<Error />} />
       </Routes>
     </BrowserRouter>
   </Provider>
