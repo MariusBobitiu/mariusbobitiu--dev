@@ -1,10 +1,10 @@
 # Single page app -> Redirect to different path
 [[redirects]]
-from = "/*"
+from = "/policies"
 to = "/"
 status = 200
 
 # Custom 404
 from = '/*'
-to = '/404'
+to = '/'
 status = 404
