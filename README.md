@@ -71,7 +71,22 @@ Whether you're a potential employer, collaborator, or simply curious about my wo
 
 ### 👋🏻 Hello there!
 
- I'm **Marius**, a Technical Support Specialist with a passion for `Development`. Through this portfolio, I aim to showcase my skills, projects, and experiences, providing visitors with insights into my professional journey and accomplishments. Dive in to learn more about who I am and what I do!
+Hi there! I'm **Marius**, a Full-stack Developer with a keen focus on crafting responsive and dynamic web applications using React. My journey in tech has been driven by a deep passion for solving problems and bringing ideas to life through code. With a strong foundation in React and an adventurous spirit for exploring the full tech stack, I strive to create seamless user experiences from front to back.
+
+### 🚀 My Toolbox:
+- **Frontend:** React, Tailwind CSS, Next.js
+- **Backend:** Node.js, Express
+- **Database:** PostgreSQL
+- **Languages:** JavaScript, TypeScript
+
+### ✨ What Drives Me:
+Innovation, clean code, and the endless pursuit of learning. I believe that every line of code is a step towards building something amazing—a tool, a website, a piece of software that can make someone's day just a little bit easier.
+
+### 🌱 Currently Learning:
+I'm on a continuous journey to sharpen my skills, currently diving deeper into TypeScript and exploring best practices in React development and testing. The tech world is ever-evolving, and so am I.
+
+### 🔍 Looking Forward:
+I'm excited about the future and the opportunity to collaborate on projects that push the boundaries of what's possible. Let's code something incredible together!
 
 <!-- FEATURES -->
 ## Features 
