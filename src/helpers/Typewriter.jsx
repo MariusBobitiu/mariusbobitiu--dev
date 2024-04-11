@@ -6,7 +6,7 @@ function MyTypewriterComponent() {
     <>
       <Typewriter
         options={{
-          strings: ['Recent Graduate', 'Development', 'Technical Support', 'Cloud Architecture', 'Cybersecurity'],
+          strings: ['Recent Graduate', 'Full-Stack Developer', 'React, Next.js, Express', 'MERN Stack', 'AWS Certified'],
           autoStart: true,
           loop: true,
           delay: 75,

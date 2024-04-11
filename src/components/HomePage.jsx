@@ -1,17 +1,21 @@
 import React, {useState} from 'react';
 import Typewriter from '../helpers/Typewriter';
-import '../styles/components/HomePage.css'
-import { MdPlace } from "react-icons/md";
+import '../styles/components/HomePage.css';
+import { useDispatch } from 'react-redux';
+import { setActiveSection } from '../helpers/features/navbar/navbarSlice';
 
 // ---------- ICONS ----------
+import { MdPlace } from "react-icons/md";
 import { IconContext } from 'react-icons';
 import { FaDribbble, FaGithub, FaLinkedin } from "react-icons/fa";
 import { LuMailPlus } from "react-icons/lu";
 import { FaRegCopyright } from 'react-icons/fa6';
+import { IoIosArrowForward } from "react-icons/io";
 
 
 function HomePage({ value }) {
    const [activeMap, setActiveMap] = useState('');
+   const dispatch = useDispatch();
 
    const mapEnter = () => setActiveMap('active--map');
    const mapLeave = () => setActiveMap('');
@@ -22,6 +26,10 @@ function HomePage({ value }) {
 
    const linkEnter = (e) => e.currentTarget.classList.add('hover-link');
    const linkLeave = (e) => e.currentTarget.classList.remove('hover-link');
+
+   const handleChangeActiveSection = (section) => {
+      dispatch(setActiveSection(section));
+   }
 
    return (
     <div>
@@ -114,6 +122,13 @@ function HomePage({ value }) {
                   </li>
                </ul>
             </div>
+         </div>
+         <div className="homepage--projects-topbar">
+            <p className="projects--title" onClick={() => {
+               handleChangeActiveSection('projects');
+            }}>
+               See Projects <span className='arrow-link'> <IoIosArrowForward /> </span>
+            </p>
          </div>
          <div className="copyright--container">
                <p className="copyright"><FaRegCopyright /> {`2023 - ${new Date().getFullYear()}`}.&nbsp;<a href='https://www.linkedin.com/in/marius-b-4235b5266/' target='_blank' rel='noreferrer'>Marius Bobitiu&nbsp;</a>- All rights reserved. See&nbsp;<a href="/policies">User Agreements.</a></p>            

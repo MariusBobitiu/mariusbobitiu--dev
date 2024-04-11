@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.4ceae2b1.css",
-    "main.js": "/static/js/main.7daeabea.js",
+    "main.css": "/static/css/main.11dc794d.css",
+    "main.js": "/static/js/main.99c4e1cd.js",
     "static/media/CompTIA Security+ ce certificate.png": "/static/media/CompTIA Security+ ce certificate.6180008153252abee3d6.png",
     "static/media/CompTIA A+ ce certificate.png": "/static/media/CompTIA A+ ce certificate.ff95c9739dddecba4065.png",
+    "static/media/Marius-Catalin Bobitiu - CV.pdf": "/static/media/Marius-Catalin Bobitiu - CV.efcece4b26f1f179be1f.pdf",
     "static/media/Avatar.webp": "/static/media/Avatar.6bd22e1edee3cee4fb07.webp",
     "static/media/AWS Certified Solutions Architect - Associate certificate.png": "/static/media/AWS Certified Solutions Architect - Associate certificate.93a664feeddccc4538ca.png",
     "static/media/AWS Certified Cloud Practitioner certificate.png": "/static/media/AWS Certified Cloud Practitioner certificate.b49b70e2a6e8115bcfe6.png",
-    "static/media/Marius-Catalin Bobitiu - CV.pdf": "/static/media/Marius-Catalin Bobitiu - CV.ef38a4c4e2b39ba09121.pdf",
     "static/media/Logo-white.png": "/static/media/Logo-white.5761e3bef846ccb744ed.png",
     "static/media/TryHackMe - SOC Level 1.png": "/static/media/TryHackMe - SOC Level 1.1ef278730328c9e08680.png",
     "static/media/TERRAFORM.png": "/static/media/TERRAFORM.068564bf09c35cfafba0.png",
@@ -21,11 +21,11 @@
     "static/media/CSS.png": "/static/media/CSS.27b0a8a6cf7f3dcf1abb.png",
     "static/media/React.png": "/static/media/React.ccb97f287d4d51b10a6b.png",
     "index.html": "/index.html",
-    "main.4ceae2b1.css.map": "/static/css/main.4ceae2b1.css.map",
-    "main.7daeabea.js.map": "/static/js/main.7daeabea.js.map"
+    "main.11dc794d.css.map": "/static/css/main.11dc794d.css.map",
+    "main.99c4e1cd.js.map": "/static/js/main.99c4e1cd.js.map"
   },
   "entrypoints": [
-    "static/css/main.4ceae2b1.css",
-    "static/js/main.7daeabea.js"
+    "static/css/main.11dc794d.css",
+    "static/js/main.99c4e1cd.js"
   ]
 }
